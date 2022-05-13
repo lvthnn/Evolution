@@ -1,0 +1,58 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[T1]{fontenc} 
+\usepackage{latexsym,amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage[most]{tcolorbox}
+\usepackage{pgfplots}
+\usepackage{nicefrac}
+\usepackage{derivative}
+\usepackage{newtxtext, newtxmath}
+\usepackage{caption}
+\usepackage{multicol}
+\pgfplotsset{compat=1.17}
+\voffset=-1.0in
+\hoffset=-0.5in
+\textwidth=6in
+\textheight=9.0in
+\setlength{\jot}{.8em}
+\captionsetup{labelfont=sc}
+
+\title{Analysis of real world eco-evolutionary data using computational modelling and statistical inference}
+\author{Kári Hlynsson}
+\date{University of Iceland, \\ Department of Mathematics}
+
+
+\begin{document}
+
+\renewcommand{\abstractname}{Abstract}
+
+\maketitle
+
+\begin{abstract}
+    \noindent We present a quantitative method towards analyzing eco-evolutionary data where trait values
+    $z$ are recorded over a fixed time period. Statistical methods towards deriving confidence intervals towards
+    parameter estimation are discussed and we see how we can arrive at a plausible estimate for environmental difficulty
+    by means of the TEST (\emph{Temporal Evolutionary Simulation Tool}) model. We briefly discuss the probabilistic inference
+    regarding the mechanism of selection in light of the model.
+\end{abstract}
+
+\begin{multicols}{2}
+\section*{\sc Introduction}
+Under Charles Darwin's traditional theory of natural selection, a population of individuals in some locus is expected to develop
+towards increased fitness with respect to their environment as time passes. In his landmark publication, \emph{On the Origin of Species},
+Darwin informally defines natural selection by the following:
+\begin{quote}
+    [...] If variations useful to any organic being ever occur, assuredly individuals thus characterized will have the best chance of being
+    preserved in the struggle for life; and from the strong principle of inheritance, these will tend to produce offspring similarly
+    characterized. This principle of preservation, or the survival of the fittest, I have called natural selection.
+\end{quote}
+Douglas Futuyama, a prominent figure in the field of evolutionary biology, defines adaption, a term closely linked with natural selection, as 
+"\emph{a characteristic that enhances the survival or reproduction or organisms that bear it, relative to alternative character states}". Fitness
+is an attribute which reflects the reproductive success or survivalistic ability of an individual. In this paper, we will denote fitness by $\omega$,
+where $\omega_i$ represents the corresponding fitness of some individual with an index $i$ in the population.
+\par The term trait value is denoted by $z$ and represents the quantitative measure of some biochemical, morphological, physiological or anatomical structure
+or construct which is subject to genetic variation. As we will see,
+\end{multicols}
+\end{document}
